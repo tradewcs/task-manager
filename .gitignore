@@ -1,0 +1,8 @@
+# Binaries
+taskman
+
+*.o
+*.out
+*.log
+*~
+*.swp
