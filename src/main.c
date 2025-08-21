@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
             printf("Error: kill requires a PID\n");
             return 1;
         }
-        printf("Killing PID %s (not yet implemented)\n", argv[2]);
+	return process_kill(argv[2]);
     } else if (strcmp(argv[1], "search") == 0) {
         if (argc < 3) {
             printf("Error: search requires a process name\n");
