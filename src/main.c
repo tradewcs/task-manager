@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
             printf("Error: search requires a process name\n");
             return 1;
         }
-        printf("Searching for process with name: %s (not yet implemented)\n", argv[2]);
+	return search_processes(argv[2]);
     } else {
         print_usage();
         return 1;
