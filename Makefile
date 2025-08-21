@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -std=c11
-SRC=src/main.c
+CFLAGS=-Wall -Wextra -std=c11 -Iinclude
+SRC=src/main.c src/process_list.c
 OUT=taskman
 
 all:

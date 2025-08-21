@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "process_list.h"
 
 void print_usage() {
     printf("Usage:\n");
@@ -17,7 +18,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (strcmp(argv[1], "list") == 0) {
-        printf("Listing processes (not yet implemented)\n");
+        return list_processes();
     } else if (strcmp(argv[1], "info") == 0) {
         if (argc < 3) {
             printf("Error: info requires a PID\n");
